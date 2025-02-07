@@ -10,3 +10,12 @@ Creates a new AWS SAM project using the downloaded template.
 
 rm samconfig.toml
 During the first build and deploy cycle, AWS SAM will create an optimized project-specific configuration file.
+
+
+sam pipeline init --bootstrap
+You should use sam pipeline init --bootstrap when:
+
+You want to automate deployments of your AWS SAM serverless application.
+You’re setting up a new CI/CD pipeline for your project.
+You need to deploy your serverless application to multiple environments (e.g., dev, test, prod).
+You're using services like AWS CodePipeline, AWS CodeBuild, or GitHub Actions.
